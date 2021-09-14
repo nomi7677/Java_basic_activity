@@ -9,47 +9,59 @@ public class Fix {
         // Syntax
 
         // Problem 1
-        System.out.println("Hello World")
+        // semi colon missing
+        System.out.println("Hello World");
 
         // Problem 2
-        System.out.println("Hello World);
+        // quotes are missing
+        System.out.println("Hello World");
 
         // Problem 3
-        system.out.println("Hello World");
+        // S is lowercase
+        System.out.println("Hello World");
 
         // Problem 4
+        // age variable was not defined
+        String age = " 01-01-1800";
         System.out.println(age);
 
         // Problem 5
-        int score;
+        // score is not initialized
+        int score = 10;
         System.out.println(score);
 
         // Problem 6
+        //same name for both variables
         int height = 5;
-        System.out.println(height);
+       // System.out.println(height);
 
-        int height = 7;
+       /*int */  height = 7;
         System.out.println(height);
 
         // Problem 7
+        // changed data type from double to int
         Scanner input = new Scanner(System.in);
-        int temp = input.nextDouble();
+        int temp = input.nextInt();
+        System.out.println(temp);
 
         // Problem 8
+        // equal signs were missing
         int count = 0;
-        count + 1;
-        count + 2;
-        count + 3;
+        count += 1;
+        count += 2;
+        count += 3;
         System.out.println(count);
 
         // ================================================================
         // Semantic
 
         // Problem 9
+        // take out quotes and colon
         double weight = 200;
-        System.out.println("Weight: ");
+        System.out.println(weight);
 
         // Problem 10
+        // nothing wrong
         Scanner input1 = new Scanner(System.in);
         int i = input1.nextInt();
         System.out.println(i);
@@ -59,15 +71,17 @@ public class Fix {
         System.out.println(j);
 
         // Problem 11
-        int fahrenheit = 45;
-        int celsius = (fahrenheit - 32) * 5/9;
+        // changed data type from int to float
+        float fahrenheit = 45;
+        float celsius = (fahrenheit - 32) * 5/9;
         System.out.println(celsius);
 
         // Problem 12
-        int a = 4;
-        int b = 3;
-        int c = 12;
-        double average = a + b + c / 3;
+        // added parenthesis around variables in average and changed data type from int to double
+        double a = 4;
+        double b = 3;
+        double c = 12;
+        double average = (a + b + c) / 3;
         System.out.println(average);
 
     }
